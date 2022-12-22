@@ -152,3 +152,64 @@ def question_15() -> None:
         print(72.7 * altura - 58, 62.1 * altura - 44.7)
 
     peso_ideal(float(input()))
+
+
+def question_16() -> None:
+    horas, minutos, segundos = map(int, input().split(":"))
+    tempo = segundos + (minutos * 60) + (horas * 3600)
+    print(f"La se foram {tempo} segundos que nao voltam mais...")
+
+
+def question_17() -> None:
+    def binario(n: int) -> None:
+        print(bin(n))
+
+    for _ in range(5):
+        binario(int(input()))
+
+
+def question_18() -> None:
+    def hexadecimal(n: int) -> None:
+        print(hex(n))
+
+    for _ in range(5):
+        hexadecimal(int(input()))
+
+
+# TODO: Question 19
+# TODO: Question 20
+
+
+def question_21() -> None:
+    n1, n2, n3 = map(float, input().split())
+    p1, p2, p3 = map(int, input().split())
+
+    resultado = ((n1 * p1) + (n2 * p2) + (n3 * p3)) / (p1 + p2 + p3)
+    print(format(resultado, ".6f"))
+
+
+def question_22() -> None:
+    def sucessor(n: int) -> None:
+        print(n + 1)
+
+
+def question_23() -> None:
+    def antecessor(n: int) -> None:
+        print(n - 1)
+
+
+def question_24() -> None:
+    def concatenar(a: str, b: str) -> None:
+        print(a + b)
+
+    def repetir(string: str, num: str) -> None:
+        print(string * int(num))
+
+    def ambos(a: str, b: str, num: str) -> None:
+        print((a + b) * int(num))
+
+    a, b, c = input().split()
+
+    concatenar(a, b)
+    repetir(a, c)
+    ambos(a, b, c)
