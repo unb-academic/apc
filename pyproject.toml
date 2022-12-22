@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "apc"
+version = "0.1.0"
+description = "Repositório contendo a resolução das questões da lista de exercícios de Algoritmos e Programação de Computadores."
+authors = ["kyomi <personal@kyomi.codes>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+black = "^22.12.0"
+pre-commit = "^2.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
